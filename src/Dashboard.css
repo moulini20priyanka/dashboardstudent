@@ -183,3 +183,25 @@ body {
 .uploadButton:hover {
     background-color: #2980b9;
 }
+
+/* Existing styles remain unchanged above */
+
+.formButtonContainer {
+    margin-top: 20px; /* Space between profile details and the button */
+    text-align: center; /* Center the button in the container */
+}
+
+.formButton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db; /* Button background color */
+    color: white; /* Text color */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth color transition */
+    border: none; /* Remove default button border */
+}
+
+.formButton:hover {
+    background-color: #2980b9; /* Darker shade on hover */
+}

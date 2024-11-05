@@ -80,6 +80,11 @@ const Dashboard = () => {
         }
     };
 
+    const handleFormButtonClick = () => {
+        // Logic for form button click (e.g., navigating to a form page)
+        alert("Form button clicked!"); // Placeholder for actual logic
+    };
+
     const renderContent = () => {
         if (activeTab === 'academic') {
             return (
@@ -119,7 +124,7 @@ const Dashboard = () => {
         } else if (activeTab === 'additional') {
             return (
                 <div className="tabContent">
-                    <h2 className="contentHeader">Personal Information</h2>
+                    <h2 className="contentHeader">Additional Information</h2>
                     <table className="table">
                         <tbody>
                             {Object.keys(userData).map((key, index) => (
@@ -199,6 +204,9 @@ const Dashboard = () => {
                         className={activeTab === 'additional' ? 'activeTab' : 'tab'}
                     >
                         Additional Information
+                    </button>
+                    <button onClick={handleFormButtonClick} className="formButton">
+                        Form
                     </button>
                 </div>
                 <div className="content">
