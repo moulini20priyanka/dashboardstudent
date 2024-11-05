@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Dashboard from './Dashboard';
+import './index.css';
+import '@fortawesome/fontawesome-free/css/all.min.css'; // Ensure FontAwesome is imported
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+    return (
+        <div>
+            <Dashboard />
+        </div>
+    );
+};
 
 export default App;
+
+// Render the App
+ReactDOM.render(<App />, document.getElementById('root'));

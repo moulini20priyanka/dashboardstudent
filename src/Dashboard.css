@@ -1,0 +1,185 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+    background-color: #eef2f5;
+}
+
+.sidebar {
+    width: 300px;
+    padding: 20px;
+    background-color: #34495e;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profileContainer {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profilePicture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.fileInput {
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.username {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0;
+}
+
+.approvalStatus {
+    color: #2ecc71;
+    margin: 0;
+}
+
+.profileDetails {
+    width: 100%;
+    line-height: 1.6;
+}
+
+.profileDetails p {
+    margin: 10px 0;
+}
+
+.mainContent {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tabContainer {
+    display: flex;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ddd;
+}
+
+.tab {
+    padding: 15px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+    color: #34495e;
+    font-size: 16px;
+}
+
+.tab:hover {
+    border-bottom: 2px solid #3498db;
+    color: #3498db;
+}
+
+.activeTab {
+    padding: 15px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #3498db;
+    color: #3498db;
+    font-size: 16px;
+}
+
+.tabContent {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contentHeader {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tableCell {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.input {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.buttonGroup {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.saveButton,
+.editButton {
+    padding: 10px 20px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.saveButton {
+    background-color: #2ecc71;
+    color: white;
+}
+
+.editButton {
+    background-color: #3498db;
+    color: white;
+}
+
+.saveButton:hover {
+    background-color: #27ae60;
+}
+
+.editButton:hover {
+    background-color: #2980b9;
+}
+
+.uploadButtonContainer {
+    margin-top: 20px; /* Increased space between the upload button and username */
+    text-align: center;
+}
+
+.uploadButton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.uploadButton:hover {
+    background-color: #2980b9;
+}
